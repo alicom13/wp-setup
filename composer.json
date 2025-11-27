@@ -1,6 +1,6 @@
 {
     "name": "alicom13/wp-setup",
-    "description": "A lightweight WordPress configuration manager inspired by Roots\\WPConfig but standalone and dependency-free",
+    "description": "A lightweight WordPress configuration manager inspired by Roots\\WPConfig\ but standalone and dependency-free",
     "type": "library",
     "keywords": [
         "wordpress",
@@ -8,6 +8,7 @@
         "config",
         "constants",
         "wp-config",
+        "wp-setup",
         "roots"
     ],
     "homepage": "https://github.com/alicom13/wp-setup",
