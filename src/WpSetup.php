@@ -9,7 +9,7 @@ declare(strict_types=1);
  * 
  * @package    Alicom13\WpSetup
  * @author     alicom13
- * @version    1.0.0
+ * @version    1.0.1
  * @license    MIT
  * @link       https://github.com/alicom13/wp-setup
  */
@@ -251,4 +251,15 @@ class WpSetup
 
         return false;
     }
+}
+
+/**
+ * Setup - Short alias for WpSetup
+ * 
+ * Usage: Alicom13\WpSetup\Setup::define()
+ */
+class Setup extends WpSetup
+{
+    // Class alias for convenience
+    // Now you can use: use Alicom13\WpSetup\Setup;
 }
