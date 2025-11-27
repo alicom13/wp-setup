@@ -1,0 +1,40 @@
+{
+    "name": "alicom13/wp-setup",
+    "description": "A lightweight WordPress configuration manager inspired by Roots\\WPConfig but standalone and dependency-free",
+    "type": "library",
+    "keywords": [
+        "wordpress",
+        "configuration", 
+        "config",
+        "constants",
+        "wp-config",
+        "roots"
+    ],
+    "homepage": "https://github.com/alicom13/wp-setup",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alicom13",
+            "homepage": "https://github.com/alicom13"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alicom13\\WpSetup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alicom13\\WpSetup\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit tests/"
+    }
+}
