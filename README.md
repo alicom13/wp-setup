@@ -5,7 +5,7 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
 ![WordPress](https://img.shields.io/badge/WordPress-Compatible-0073aa?style=for-the-badge&logo=wordpress)
 
-A lightweight, standalone WordPress configuration management library inspired by Roots\WPConfig\Config but with zero dependencies.
+A lightweight, standalone WordPress configuration management library inspired by Roots\WPConfig but with zero dependencies.
 
 ## ✨ Features
 
