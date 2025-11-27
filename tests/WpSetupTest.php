@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Alicom13\WpSetup\Tests;
 
 use PHPUnit\Framework\TestCase;
+use Alicom13\WpSetup\Setup;
 use Alicom13\WpSetup\WpSetup;
 use InvalidArgumentException;
 use RuntimeException;
@@ -12,13 +13,23 @@ class WpSetupTest extends TestCase
 {
     protected function tearDown(): void
     {
+        // Clear both classes
+        Setup::clear();
         WpSetup::clear();
     }
 
-    public function testDefineAndGet(): void
+    public function testSetupAliasWorks(): void
     {
-        WpSetup::define('WP_TEST_CONSTANT', 'test_value');
+        // Test that Setup alias works
+        Setup::define('WP_TEST_CONSTANT', 'test_value');
+        $this->assertTrue(Setup::has('WP_TEST_CONSTANT'));
         $this->assertTrue(WpSetup::has('WP_TEST_CONSTANT'));
+    }
+
+    public function testDefineWithValidParameters(): void
+    {
+        WpSetup::define('WP_TEST', 'value');
+        $this->assertTrue(WpSetup::has('WP_TEST'));
     }
 
     public function testDefineWithEmptyKeyThrowsException(): void
